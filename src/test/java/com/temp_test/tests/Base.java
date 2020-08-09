@@ -23,17 +23,18 @@ public class Base {
 	
     protected WebDriver driver;
 	String browserName=System.getProperty("BROWSER");
+	String completeUrl="http://localhost:44444/wd/hub";
     
 	
     //-------------------------------------------RUN ON  SERVER------------------------------------------
-	//@Parameters({"browserName"})
+	@Parameters({"browserName"})
     @BeforeMethod
-	public void initialSetUp1() throws MalformedURLException {
+	public void initialSetUp1(String browserName) throws MalformedURLException {
     	
 		System.out.println("performing initial setup of WebDriver");
         //String browserName=name;
         if(browserName.equalsIgnoreCase("CHROME")) {
-        	String completeUrl="http://localhost:4444/wd/hub";
+        	
         	DesiredCapabilities dc=new DesiredCapabilities();
 	        dc.setBrowserName("chrome");
 
@@ -43,7 +44,6 @@ public class Base {
 	        driver=new RemoteWebDriver(new URL(completeUrl), options);
         }
         else if(browserName.equalsIgnoreCase("FIREFOX")) {
-        	String completeUrl="http://localhost:4545/wd/hub";
         	DesiredCapabilities dc=new DesiredCapabilities();
 	        dc.setBrowserName("firefox");
 
