@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DevOps And News">
+    <test name="set1 DevOpsURL">
+        
+        <parameter name="url1" value="title:=selenium;url:=https://www.selenium.dev/"/>
+        <parameter name="url2" value="title:=GitHub;url:=https://github.com/"/>
+        <parameter name="url3" value="title:=jenkins;url:=https://www.jenkins.io/"/>
+        <parameter name="url4" value="title:=maven;url:=https://mvnrepository.com/"/>
+        <parameter name="url5" value="title:=Docker Hub;url:=https://hub.docker.com/"/>
+        <classes>
+            <class name="com.temp_test.tests.MyTest" />
+
+        </classes>
+    </test>
+    
+    <test name="set2 NEWS URL">
+        
+        <parameter name="url1" value="title:=ndtv;url:=https://www.ndtv.com/"/>
+        <parameter name="url2" value="title:=New York Times;url:=https://www.nytimes.com/"/>
+        <parameter name="url3" value="title:=dawn.com;url:=https://www.dawn.com/"/>
+        <parameter name="url4" value="title:=bbc;url:=https://www.bbc.com/"/>
+        <parameter name="url5" value="title:=telegraph;url:=https://www.telegraph.co.uk/"/>
+        <classes>
+            <class name="com.temp_test.tests.MyTest" />
+
+        </classes>
+    </test>
+    
+
+</suite>

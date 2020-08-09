@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Orgs And PopularProducts">
+    
+      <test name="set3 OrganizationURL">
+        
+        <parameter name="url1" value="title:=xoriant;url:=http://xoriant.com/"/>
+        <parameter name="url2" value="title:=cognizant;url:=https://www.cognizant.com/"/>
+        <parameter name="url3" value="title:=ptc;url:=https://www.ptc.com/"/>
+        <parameter name="url4" value="title:=Dassault;url:=https://www.3ds.com/"/>
+        <parameter name="url5" value="title:=John Deere;url:=https://www.deere.com/"/>
+        <classes>
+            <class name="com.temp_test.tests.MyTest" />
+
+        </classes>
+    </test>
+    
+      <test name="set4 PopularProductsURL">
+        
+        <parameter name="url1" value="title:=samsung;url:=https://www.samsung.com/in/"/>
+        <parameter name="url2" value="title:=Apple;url:=https://www.apple.com/"/>
+        <parameter name="url3" value="title:=dell;url:=https://www.dell.com/"/>
+        <parameter name="url4" value="title:=HP;url:=https://www8.hp.com/"/>
+        <parameter name="url5" value="title:=lenovo;url:=https://www.lenovo.com/"/>
+        <classes>
+            <class name="com.temp_test.tests.MyTest" />
+
+        </classes>
+    </test>
+</suite>

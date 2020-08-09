@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.temp_test.tests.TempTest">
+        <methods>
+          <include name="navigateToMaven"/>
+          <include name="setUp"/>
+          <include name="navigateToHotstar"/>
+          <include name="navigateToGoogle"/>
+          <include name="initialSetUp"/>
+          <include name="navigateToYoutube"/>
+          <include name="tearDown"/>
+          <include name="navigateToGitHub"/>
+        </methods>
+      </class> <!-- com.temp_test.tests.TempTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

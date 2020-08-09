@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-temp-module">
+              <span class="suite-name border-failed">temp-module</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-temp-module">
+                    <span>tempTestValidateTitles.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-temp-module">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-temp-module">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-temp-module">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-temp-module">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-temp-module">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-temp-module">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 3 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-temp-module" class="hide-methods failed suite-temp-module"> (hide)</a> <!-- hide-methods failed suite-temp-module -->
+                      <a href="#" panel-name="suite-temp-module" class="show-methods failed suite-temp-module"> (show)</a> <!-- show-methods failed suite-temp-module -->
+                    </span>
+                    <div class="method-list-content failed suite-temp-module">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl3">navigateToUrl3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl4">navigateToUrl4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl5">navigateToUrl5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-temp-module -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-temp-module" class="hide-methods passed suite-temp-module"> (hide)</a> <!-- hide-methods passed suite-temp-module -->
+                      <a href="#" panel-name="suite-temp-module" class="show-methods passed suite-temp-module"> (show)</a> <!-- show-methods passed suite-temp-module -->
+                    </span>
+                    <div class="method-list-content passed suite-temp-module">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl1">navigateToUrl1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl1">navigateToUrl1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl1">navigateToUrl1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl1">navigateToUrl1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl2">navigateToUrl2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl2">navigateToUrl2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl2">navigateToUrl2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl2">navigateToUrl2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl3">navigateToUrl3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl3">navigateToUrl3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl3">navigateToUrl3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl4">navigateToUrl4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl4">navigateToUrl4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl4">navigateToUrl4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl5">navigateToUrl5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl5">navigateToUrl5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-temp-module" title="com.temp_test.tests.TempTest_ValidateTitles" hash-for-method="navigateToUrl5">navigateToUrl5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-temp-module -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-temp-module" class="panel temp-module">
+          <div class="suite-temp-module-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.temp_test.tests.TempTest_ValidateTitles</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl3">
+                  </a> <!-- navigateToUrl3 -->
+                  <span class="method-name">navigateToUrl3</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;10.128.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-1021-gcp&apos;, java.version: &apos;1.8.0_252&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33911}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: a4900d5907712b236b9765c6ac9...}
+Session ID: a4900d5907712b236b9765c6ac9a8b12
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.temp_test.tests.TempTest_ValidateTitles.navigateToUrl3(TempTest_ValidateTitles.java:75)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl4">
+                  </a> <!-- navigateToUrl4 -->
+                  <span class="method-name">navigateToUrl4</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;10.128.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-1021-gcp&apos;, java.version: &apos;1.8.0_252&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:44813}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 3ef6a99d481ab3c575d9d34711e...}
+Session ID: 3ef6a99d481ab3c575d9d34711ef9c7b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.temp_test.tests.TempTest_ValidateTitles.navigateToUrl4(TempTest_ValidateTitles.java:89)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl5">
+                  </a> <!-- navigateToUrl5 -->
+                  <span class="method-name">navigateToUrl5</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;10.128.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-1021-gcp&apos;, java.version: &apos;1.8.0_252&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33105}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: dc1851ef1d8afaa048318a829d7...}
+Session ID: dc1851ef1d8afaa048318a829d74501a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.temp_test.tests.TempTest_ValidateTitles.navigateToUrl5(TempTest_ValidateTitles.java:103)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-temp-module-class-failed -->
+          <div class="suite-temp-module-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.temp_test.tests.TempTest_ValidateTitles</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl1">
+                  </a> <!-- navigateToUrl1 -->
+                  <span class="method-name">navigateToUrl1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl1">
+                  </a> <!-- navigateToUrl1 -->
+                  <span class="method-name">navigateToUrl1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl1">
+                  </a> <!-- navigateToUrl1 -->
+                  <span class="method-name">navigateToUrl1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl1">
+                  </a> <!-- navigateToUrl1 -->
+                  <span class="method-name">navigateToUrl1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl2">
+                  </a> <!-- navigateToUrl2 -->
+                  <span class="method-name">navigateToUrl2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl2">
+                  </a> <!-- navigateToUrl2 -->
+                  <span class="method-name">navigateToUrl2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl2">
+                  </a> <!-- navigateToUrl2 -->
+                  <span class="method-name">navigateToUrl2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl2">
+                  </a> <!-- navigateToUrl2 -->
+                  <span class="method-name">navigateToUrl2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl3">
+                  </a> <!-- navigateToUrl3 -->
+                  <span class="method-name">navigateToUrl3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl3">
+                  </a> <!-- navigateToUrl3 -->
+                  <span class="method-name">navigateToUrl3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl3">
+                  </a> <!-- navigateToUrl3 -->
+                  <span class="method-name">navigateToUrl3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl4">
+                  </a> <!-- navigateToUrl4 -->
+                  <span class="method-name">navigateToUrl4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl4">
+                  </a> <!-- navigateToUrl4 -->
+                  <span class="method-name">navigateToUrl4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl4">
+                  </a> <!-- navigateToUrl4 -->
+                  <span class="method-name">navigateToUrl4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl5">
+                  </a> <!-- navigateToUrl5 -->
+                  <span class="method-name">navigateToUrl5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl5">
+                  </a> <!-- navigateToUrl5 -->
+                  <span class="method-name">navigateToUrl5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToUrl5">
+                  </a> <!-- navigateToUrl5 -->
+                  <span class="method-name">navigateToUrl5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-temp-module-class-passed -->
+        </div> <!-- panel temp-module -->
+        <div panel-name="test-xml-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/tempTestValidateTitles.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;temp-module&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;set1 DevOpsURL&quot;&gt;
+    &lt;parameter name=&quot;url5&quot; value=&quot;title:=Docker Hub;url:=https://hub.docker.com/&quot;/&gt;
+    &lt;parameter name=&quot;url3&quot; value=&quot;title:=jenkins;url:=https://www.jenkins.io/&quot;/&gt;
+    &lt;parameter name=&quot;url4&quot; value=&quot;title:=maven;url:=https://mvnrepository.com/&quot;/&gt;
+    &lt;parameter name=&quot;url1&quot; value=&quot;title:=selenium;url:=https://www.selenium.dev/&quot;/&gt;
+    &lt;parameter name=&quot;url2&quot; value=&quot;title:=GitHub;url:=https://github.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.temp_test.tests.TempTest_ValidateTitles&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- set1 DevOpsURL --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;set2 NEWS URL&quot;&gt;
+    &lt;parameter name=&quot;url5&quot; value=&quot;title:=The Hindu;url:=https://www.thehindu.com/&quot;/&gt;
+    &lt;parameter name=&quot;url3&quot; value=&quot;title:=Washington Post;url:=https://www.washingtonpost.com/&quot;/&gt;
+    &lt;parameter name=&quot;url4&quot; value=&quot;title:=Al Jazeera;url:=https://www.aljazeera.com/&quot;/&gt;
+    &lt;parameter name=&quot;url1&quot; value=&quot;title:=ndtv;url:=https://www.ndtv.com/&quot;/&gt;
+    &lt;parameter name=&quot;url2&quot; value=&quot;title:=New York Times;url:=https://www.nytimes.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.temp_test.tests.TempTest_ValidateTitles&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- set2 NEWS URL --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;set3 OrganizationURL&quot;&gt;
+    &lt;parameter name=&quot;url5&quot; value=&quot;title:=John Deere;url:=https://www.deere.com/&quot;/&gt;
+    &lt;parameter name=&quot;url3&quot; value=&quot;title:=ptc;url:=https://www.ptc.com/&quot;/&gt;
+    &lt;parameter name=&quot;url4&quot; value=&quot;title:=Dassault;url:=https://www.3ds.com/&quot;/&gt;
+    &lt;parameter name=&quot;url1&quot; value=&quot;title:=xoriant;url:=http://xoriant.com/&quot;/&gt;
+    &lt;parameter name=&quot;url2&quot; value=&quot;title:=cognizant;url:=https://www.cognizant.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.temp_test.tests.TempTest_ValidateTitles&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- set3 OrganizationURL --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;set4 PopularProductsURL&quot;&gt;
+    &lt;parameter name=&quot;url5&quot; value=&quot;title:=lenovo;url:=https://www.lenovo.com/&quot;/&gt;
+    &lt;parameter name=&quot;url3&quot; value=&quot;title:=dell;url:=https://www.dell.com/&quot;/&gt;
+    &lt;parameter name=&quot;url4&quot; value=&quot;title:=HP;url:=https://www8.hp.com/&quot;/&gt;
+    &lt;parameter name=&quot;url1&quot; value=&quot;title:=samsung;url:=https://www.samsung.com/in/&quot;/&gt;
+    &lt;parameter name=&quot;url2&quot; value=&quot;title:=Apple;url:=https://www.apple.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.temp_test.tests.TempTest_ValidateTitles&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- set4 PopularProductsURL --&gt;
+&lt;/suite&gt; &lt;!-- temp-module --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for temp-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">set1 DevOpsURL (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">set2 NEWS URL (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">set3 OrganizationURL (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">set4 PopularProductsURL (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for temp-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for temp-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_temp-module');
+function tableData_temp-module() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'navigateToUrl5')
+data.setCell(0, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(0, 3, 20063);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'navigateToUrl3')
+data.setCell(1, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(1, 3, 20049);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'navigateToUrl4')
+data.setCell(2, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(2, 3, 20040);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'navigateToUrl2')
+data.setCell(3, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(3, 3, 6971);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'navigateToUrl2')
+data.setCell(4, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(4, 3, 6567);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'navigateToUrl1')
+data.setCell(5, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(5, 3, 6441);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToUrl4')
+data.setCell(6, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(6, 3, 4921);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'navigateToUrl1')
+data.setCell(7, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(7, 3, 4461);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'navigateToUrl1')
+data.setCell(8, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(8, 3, 3433);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'navigateToUrl3')
+data.setCell(9, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(9, 3, 3218);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'navigateToUrl5')
+data.setCell(10, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(10, 3, 3210);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'navigateToUrl5')
+data.setCell(11, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(11, 3, 3014);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'navigateToUrl3')
+data.setCell(12, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(12, 3, 2522);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'navigateToUrl4')
+data.setCell(13, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(13, 3, 1861);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'navigateToUrl5')
+data.setCell(14, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(14, 3, 1574);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'navigateToUrl2')
+data.setCell(15, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(15, 3, 1128);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'navigateToUrl2')
+data.setCell(16, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(16, 3, 982);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'navigateToUrl4')
+data.setCell(17, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(17, 3, 813);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'navigateToUrl1')
+data.setCell(18, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(18, 3, 726);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'navigateToUrl3')
+data.setCell(19, 2, 'com.temp_test.tests.TempTest_ValidateTitles')
+data.setCell(19, 3, 651);
+window.suiteTableData['temp-module']= { tableData: data, tableDiv: 'times-div-temp-module'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-temp-module">
+              </div> <!-- times-div-temp-module -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for temp-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-temp-module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.temp_test.tests.TempTest_ValidateTitles</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=selenium;url:=https://www.selenium.dev/, title:=GitHub;url:=https://github.com/, title:=jenki...)</span>
+                <span class="method-start">3335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl1</span>
+                <span class="method-start">3337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl1 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl1()[pri:0...)</span>
+                <span class="method-start">4064 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">4131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=selenium;url:=https://www.selenium.dev/, title:=GitHub;url:=https://github.com/, title:=jenki...)</span>
+                <span class="method-start">5056 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl2</span>
+                <span class="method-start">5057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl2 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl2()[pri:0...)</span>
+                <span class="method-start">6040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">6137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=selenium;url:=https://www.selenium.dev/, title:=GitHub;url:=https://github.com/, title:=jenki...)</span>
+                <span class="method-start">7049 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl3</span>
+                <span class="method-start">7049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl3 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl3()[pri:0...)</span>
+                <span class="method-start">7701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">7774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=selenium;url:=https://www.selenium.dev/, title:=GitHub;url:=https://github.com/, title:=jenki...)</span>
+                <span class="method-start">8701 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl4</span>
+                <span class="method-start">8704 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl4 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl4()[pri:0...)</span>
+                <span class="method-start">9517 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">9584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=selenium;url:=https://www.selenium.dev/, title:=GitHub;url:=https://github.com/, title:=jenki...)</span>
+                <span class="method-start">10503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl5</span>
+                <span class="method-start">10504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl5 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl5()[pri:0...)</span>
+                <span class="method-start">13519 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">13647 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=ndtv;url:=https://www.ndtv.com/, title:=New York Times;url:=https://www.nytimes.com/, title:=...)</span>
+                <span class="method-start">14558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl1</span>
+                <span class="method-start">14558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl1 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl1()[pri:0...)</span>
+                <span class="method-start">20999 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">21140 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=ndtv;url:=https://www.ndtv.com/, title:=New York Times;url:=https://www.nytimes.com/, title:=...)</span>
+                <span class="method-start">22094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl2</span>
+                <span class="method-start">22096 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl2 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl2()[pri:0...)</span>
+                <span class="method-start">29068 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">29201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=ndtv;url:=https://www.ndtv.com/, title:=New York Times;url:=https://www.nytimes.com/, title:=...)</span>
+                <span class="method-start">30059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">navigateToUrl3</span>
+                <span class="method-start">30060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl3 status=FAILURE method=TempTest_ValidateTitles.navigateToUrl3()[pri:0...)</span>
+                <span class="method-start">50126 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">50207 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=ndtv;url:=https://www.ndtv.com/, title:=New York Times;url:=https://www.nytimes.com/, title:=...)</span>
+                <span class="method-start">51088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">navigateToUrl4</span>
+                <span class="method-start">51088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl4 status=FAILURE method=TempTest_ValidateTitles.navigateToUrl4()[pri:0...)</span>
+                <span class="method-start">71130 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">71326 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=ndtv;url:=https://www.ndtv.com/, title:=New York Times;url:=https://www.nytimes.com/, title:=...)</span>
+                <span class="method-start">72292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">navigateToUrl5</span>
+                <span class="method-start">72293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl5 status=FAILURE method=TempTest_ValidateTitles.navigateToUrl5()[pri:0...)</span>
+                <span class="method-start">92358 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">92469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=xoriant;url:=http://xoriant.com/, title:=cognizant;url:=https://www.cognizant.com/, title:=pt...)</span>
+                <span class="method-start">93335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl1</span>
+                <span class="method-start">93335 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl1 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl1()[pri:0...)</span>
+                <span class="method-start">97797 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">97868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=xoriant;url:=http://xoriant.com/, title:=cognizant;url:=https://www.cognizant.com/, title:=pt...)</span>
+                <span class="method-start">98809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl2</span>
+                <span class="method-start">98810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl2 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl2()[pri:0...)</span>
+                <span class="method-start">105377 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">105446 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=xoriant;url:=http://xoriant.com/, title:=cognizant;url:=https://www.cognizant.com/, title:=pt...)</span>
+                <span class="method-start">106338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl3</span>
+                <span class="method-start">106340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl3 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl3()[pri:0...)</span>
+                <span class="method-start">108862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">108938 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=xoriant;url:=http://xoriant.com/, title:=cognizant;url:=https://www.cognizant.com/, title:=pt...)</span>
+                <span class="method-start">109788 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl4</span>
+                <span class="method-start">109789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl4 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl4()[pri:0...)</span>
+                <span class="method-start">111650 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">111713 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=xoriant;url:=http://xoriant.com/, title:=cognizant;url:=https://www.cognizant.com/, title:=pt...)</span>
+                <span class="method-start">112543 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl5</span>
+                <span class="method-start">112544 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl5 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl5()[pri:0...)</span>
+                <span class="method-start">115755 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">115830 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=samsung;url:=https://www.samsung.com/in/, title:=Apple;url:=https://www.apple.com/, title:=de...)</span>
+                <span class="method-start">116753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl1</span>
+                <span class="method-start">116754 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl1 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl1()[pri:0...)</span>
+                <span class="method-start">120187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">120256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=samsung;url:=https://www.samsung.com/in/, title:=Apple;url:=https://www.apple.com/, title:=de...)</span>
+                <span class="method-start">121178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl2</span>
+                <span class="method-start">121178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl2 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl2()[pri:0...)</span>
+                <span class="method-start">122306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">122367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=samsung;url:=https://www.samsung.com/in/, title:=Apple;url:=https://www.apple.com/, title:=de...)</span>
+                <span class="method-start">123253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl3</span>
+                <span class="method-start">123254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl3 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl3()[pri:0...)</span>
+                <span class="method-start">126473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">126564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=samsung;url:=https://www.samsung.com/in/, title:=Apple;url:=https://www.apple.com/, title:=de...)</span>
+                <span class="method-start">127459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl4</span>
+                <span class="method-start">127459 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl4 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl4()[pri:0...)</span>
+                <span class="method-start">132381 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialSetUp</span>
+                <span class="method-start">132462 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(title:=samsung;url:=https://www.samsung.com/in/, title:=Apple;url:=https://www.apple.com/, title:=de...)</span>
+                <span class="method-start">133268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToUrl5</span>
+                <span class="method-start">133268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToUrl5 status=SUCCESS method=TempTest_ValidateTitles.navigateToUrl5()[pri:0...)</span>
+                <span class="method-start">134843 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

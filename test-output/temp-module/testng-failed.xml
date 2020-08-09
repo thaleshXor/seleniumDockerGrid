@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [temp-module]">
+  <test thread-count="5" name="temp-test-java(failed)">
+    <parameter name="url5" value="https://www.hotstar.com/in"/>
+    <parameter name="url3" value="https://www.youtube.com/"/>
+    <parameter name="url4" value="https://mvnrepository.com/"/>
+    <parameter name="url1" value="https://www.google.com/"/>
+    <parameter name="url2" value="https://github.com/"/>
+    <classes>
+      <class name="com.temp_test.tests.TempTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="navigateToHotstar"/>
+          <include name="initialSetUp"/>
+          <include name="navigateToYoutube"/>
+          <include name="tearDown"/>
+          <include name="navigateToGitHub"/>
+        </methods>
+      </class> <!-- com.temp_test.tests.TempTest -->
+    </classes>
+  </test> <!-- temp-test-java(failed) -->
+</suite> <!-- Failed suite [temp-module] -->
